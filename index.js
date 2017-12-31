@@ -72,4 +72,4 @@ const processMenus = (id) => {
       })
 }
 
-processMenus(2);
+processMenus(process.argv[2] || 1);
