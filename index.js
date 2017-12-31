@@ -11,11 +11,11 @@ const processData = (menus) => {
   if (returnPayload.valid_menus == null) returnPayload.valid_menus = []
   returnPayload.invalid_menus = returnPayload.invalid_menus.map(convertToFormat)
   returnPayload.valid_menus = returnPayload.valid_menus.map(convertToFormat)
-  console.log("invalid_menus",returnPayload.invalid_menus.length,":");
+  console.log("invalid_menus path",returnPayload.invalid_menus.length,":");
   returnPayload.invalid_menus.forEach((m)=>{
     console.log("root_id:",m.root_id,"children:",m.children);
   })
-  console.log("valid_menus",returnPayload.valid_menus.length,":");
+  console.log("valid_menus path",returnPayload.valid_menus.length,":");
   returnPayload.valid_menus.forEach((m)=>{
     console.log("root_id:",m.root_id,"children:",m.children);
   })
